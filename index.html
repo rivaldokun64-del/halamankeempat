@@ -2,180 +2,155 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profil Saya</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #F4FFFA;
-    margin: 0;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f5f6fa;
+        font-family: Arial, sans-serif;
+    }
 
-/* Header Profil */
-.profile-header {
-    background: #3CCB8E;
-    padding: 25px;
-    color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+    .container {
+        width: 92%;
+        margin: 20px auto;
+    }
 
-.profile-card {
-    background: white;
-    margin: -40px 15px 15px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
+    .profile-card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    }
 
-.profile-top {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
+    .profile-top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 
-.profile-avatar {
-    width: 60px;
-    height: 60px;
-    background: #3CCB8E;
-    border-radius: 50%;
-}
+    .profile-top img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #d9d9d9;
+    }
 
-.profile-name {
-    font-size: 20px;
-    font-weight: bold;
-}
+    .profile-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-.verified {
-    color: #3CCB8E;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 3px;
-}
+    .verified {
+        color: #2ecc71;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
 
-.profile-info {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #444;
-    line-height: 23px;
-}
+    .detail {
+        margin-top: 15px;
+        color: #444;
+        font-size: 14px;
+        line-height: 1.6;
+    }
 
-/* Menu List */
-.menu-card {
-    background: white;
-    margin: 10px 15px;
-    padding: 15px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-}
+    /* Menu item */
+    .menu-card {
+        background: white;
+        padding: 15px 18px;
+        border-radius: 15px;
+        margin-top: 12px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.menu-title {
-    font-weight: bold;
-    color: #1e6c50;
-    margin-bottom: 4px;
-}
+    .menu-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
 
-.menu-desc {
-    font-size: 13px;
-    color: #777;
-}
+    .menu-sub {
+        font-size: 13px;
+        color: #666;
+        margin-top: 3px;
+    }
 
-/* Logout */
-.logout {
-    background: white;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1.5px solid #ffb9b9;
-    color: #ff4c4c;
-    font-weight: bold;
-    text-align: center;
-}
-
-.version {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 5px;
-    color: #888;
-}
+    .arrow {
+        font-size: 18px;
+        color: #666;
+    }
 </style>
 </head>
 
 <body>
 
-<div class="profile-header">
-    <span style="font-size: 20px; font-weight: bold;">Profil Saya</span>
-</div>
+<div class="container">
 
-<div class="profile-card">
-    <div class="profile-top">
-        <div class="profile-avatar"></div>
-        <div>
-            <div class="profile-name">Rivaldo</div>
-            <div class="verified">✓ Terverifikasi</div>
+    <!-- Card Profil -->
+    <div class="profile-card">
+        <div class="profile-top">
+            <img src="https://via.placeholder.com/70" alt="profile">
+            <div>
+                <div class="profile-name">Rivaldo</div>
+                <div class="verified">✔ Terverifikasi</div>
+            </div>
+        </div>
+
+        <div class="detail">
+            rival12@gmail.com<br>
+            +62 812 3456 7890<br>
+            12 Januari 2004<br>
+            Jl. Contoh Alamat No. 123, Jakarta Selatan
         </div>
     </div>
 
-    <div class="profile-info">
-        rival12@gmail.com <br>
-        +62 812 3456 7890 <br>
-        12 Januari 2004 <br>
-        Jl. Kesehatan No. 123, Jakarta Selatan
+    <!-- Menu List -->
+    <div class="menu-card">
+        <div>
+            <div class="menu-title">Edit Profil</div>
+            <div class="menu-sub">Ubah informasi pribadi Anda</div>
+        </div>
+        <div class="arrow">›</div>
     </div>
-</div>
 
-<!-- MENU LISTS -->
-<div class="menu-card">
-    <div>
-        <div class="menu-title">Edit Profil</div>
-        <div class="menu-desc">Ubah informasi pribadi Anda</div>
+    <div class="menu-card">
+        <div>
+            <div class="menu-title">Keamanan</div>
+            <div class="menu-sub">Password dan pengaturan keamanan</div>
+        </div>
+        <div class="arrow">›</div>
     </div>
-    
-</div>
 
-<div class="menu-card">
-    <div>
-        <div class="menu-title">Keamanan</div>
-        <div class="menu-desc">Password dan pengaturan keamanan</div>
+    <div class="menu-card">
+        <div>
+            <div class="menu-title">Notifikasi</div>
+            <div class="menu-sub">Atur preferensi notifikasi</div>
+        </div>
+        <div class="arrow">›</div>
     </div>
-    
-</div>
 
-<div class="menu-card">
-    <div>
-        <div class="menu-title">Notifikasi</div>
-        <div class="menu-desc">Atur preferensi notifikasi</div>
+    <div class="menu-card">
+        <div>
+            <div class="menu-title">Metode Pembayaran</div>
+            <div class="menu-sub">Kelola kartu dan pembayaran</div>
+        </div>
+        <div class="arrow">›</div>
     </div>
-    
-</div>
 
-<div class="menu-card">
-    <div>
-        <div class="menu-title">Metode Pembayaran</div>
-        <div class="menu-desc">Kelola kartu dan pembayaran</div>
+    <div class="menu-card">
+        <div>
+            <div class="menu-title">Bantuan & Dukungan</div>
+            <div class="menu-sub">FAQ dan customer service</div>
+        </div>
+        <div class="arrow">›</div>
     </div>
-    
-</div>
 
-<div class="menu-card">
-    <div>
-        <div class="menu-title">Bantuan & Dukungan</div>
-        <div class="menu-desc">FAQ & customer service</div>
-    </div>
-    
-</div>
-
-<!-- LOGOUT -->
-<div class="logout">
-    Keluar
-</div>
-
-<div class="version">
-    Versi 1.0.0
 </div>
 
 </body>
